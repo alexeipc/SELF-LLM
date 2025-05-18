@@ -20,3 +20,5 @@ SelfExtend.apply(loaded_model, group_size, window_size, enable_flash_attention=F
 # Inference, e.g., loaded_model.generate(...)
 
 ```
+
+You can also see our sample implementation in [evaluate_perplexity_pg19.py](https://github.com/alexeipc/SELF-LLM/blob/main/evaluate_perplexity_pg19.py).
