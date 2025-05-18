@@ -7,7 +7,7 @@ import math
 from typing import Optional, Tuple
 
 from .selfextend_flash_attn import self_extend_flash_forward
-from .attn_method import generate_sequentially_grouping_position, generate_exponentially_grouping_position, generate_logistically_grouping_position
+from .attn_method import generate_logistically_grouping_position
 
 
 from transformers.utils import is_flash_attn_2_available
