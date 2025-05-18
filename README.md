@@ -6,7 +6,7 @@ SELF uses a logistic growth function to group tokens together in order for LLMs 
 ## How to use
 ### Setup environment
 Use the docker image [hoytjin/selfextend_docker](https://hub.docker.com/r/hoytjin/selfextend_docker/tags) from LongLM. This will include all packages required for the operation of SELF.  
-Also create a directory ``build`` where the program is being executed.
+Also create a directory ``build`` where the CUDA file is being compiled.
 
 ```python
 import SelfExtend
