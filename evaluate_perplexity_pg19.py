@@ -63,14 +63,11 @@ context_sizes = [4096, 6144, 8192, 10240, 12288, 14336, 16384]
 
 example = next(iter(dataset))  # This gives you the first book
 
-#text = first_example["text"]
-
 results = []
 
 for size in context_sizes:
     perplexities = []
-#for example in tqdm(subset, desc="Evaluating"):
-# for example in accelerator.track(subset, description="Evaluating"):
+
     text = example["text"]
     try:
         ppl = calculate_perplexity(text, max_length = size)
