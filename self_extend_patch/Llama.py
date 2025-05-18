@@ -10,7 +10,7 @@ from transformers.cache_utils import Cache
 from flash_attn import flash_attn_func, flash_attn_varlen_func
 from .selfextend_flash_attn import self_extend_flash_forward
 from .selfextend_flash_attn_triton import self_extend_flash_forward_triton
-from .attn_method import generate_sequentially_grouping_position, generate_exponentially_grouping_position, generate_logistically_grouping_position
+from .attn_method import generate_logistically_grouping_position
 
 
 
