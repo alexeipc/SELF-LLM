@@ -1,0 +1,13 @@
+*.pyc
+*.pyc.*
+.DS_Store
+*.cpython
+.env
+*.o
+*.slurm
+result-*.json
+long_bench_results.json
+test.py
+setup.py
+build/
+pred/
