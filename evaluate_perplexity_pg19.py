@@ -25,6 +25,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=auth_token)
 window_size = 512
 group_size = 16
 use_flash = True
+rate = 0.02
 
 # Apply SelfExtend
 SelfExtend.apply(model, group_size, window_size, rate, enable_flash_attention=use_flash, flash_attention_impl="flash_attn")
