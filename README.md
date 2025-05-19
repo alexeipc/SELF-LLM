@@ -23,7 +23,7 @@ SelfExtend.apply(loaded_model, group_size, window_size, enable_flash_attention=F
 ```
 
 ### Reasoning Models
-Reasoning models require a larger new_generated_tokens due to the thinking step. 
+Reasoning models require a larger max_new_tokens due to the thinking step. 
 
 ## Results
 | **Model**                                   | Coursera | TOEFL | QuALITY | CodeU | SFiction | Avg. |
