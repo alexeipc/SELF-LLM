@@ -6,7 +6,8 @@ SELF uses a logistic growth function to group tokens together in order for LLMs 
 ## How to use
 ### Setup environment
 Use the docker image [hoytjin/selfextend_docker](https://hub.docker.com/r/hoytjin/selfextend_docker/tags) from LongLM. This will include all packages required for the operation of SELF.  
-Also create a directory ``build`` where the CUDA file is being compiled.
+Also create a directory ``build`` where the program is being executed. \\
+If needed, modify the ``SelfExtend.py`` to include an auth token for gated models.
 
 ```python
 import SelfExtend
@@ -21,4 +22,5 @@ SelfExtend.apply(loaded_model, group_size, window_size, enable_flash_attention=F
 
 ```
 
-You can also see our sample implementation in [evaluate_perplexity_pg19.py](https://github.com/alexeipc/SELF-LLM/blob/main/evaluate_perplexity_pg19.py).
+### Reasoning Models
+Reasoning models require a larger new_generated_tokens due to the thinking step. 
